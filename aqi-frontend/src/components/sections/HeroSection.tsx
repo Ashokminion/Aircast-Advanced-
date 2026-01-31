@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, LayoutDashboard, Brain, Activity, Droplets, Wind } from 'lucide-react';
+import { LayoutDashboard, Activity, Wind } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const HeroSection = () => {

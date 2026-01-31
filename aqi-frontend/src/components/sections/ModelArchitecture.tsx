@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { Layers, Grid3X3, Repeat, ArrowRight, Brain, Target, Database, Zap } from 'lucide-react';
+import { Layers, Grid3X3, Repeat, ArrowRight, Target, Database, Zap } from 'lucide-react';
 import { Slider } from '@/components/ui/slider';
 
 const ModelArchitecture = () => {

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Brain, Search, Clock, Zap } from 'lucide-react';
+import { Brain, Search, Zap } from 'lucide-react';
 
 const AboutSection = () => {
   const ref = useRef(null);

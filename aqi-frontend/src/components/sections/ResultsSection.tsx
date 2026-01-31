@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import {
-  LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid,
+  BarChart, Bar, XAxis, YAxis, CartesianGrid,
   Tooltip, Legend, ResponsiveContainer, Area, AreaChart
 } from 'recharts';
 
@@ -149,7 +149,7 @@ const ResultsSection = () => {
                       border: '1px solid hsl(var(--border))',
                       borderRadius: '12px',
                     }}
-                    formatter={(value: number) => [`${value}%`, 'R² Score']}
+                    formatter={(value: any) => [`${value}%`, 'R² Score']}
                   />
                   <Bar
                     dataKey="r2"

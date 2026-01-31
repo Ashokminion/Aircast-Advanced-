@@ -5,63 +5,63 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 import { Info, TrendingUp } from 'lucide-react';
 
 const featureImportanceData = [
-  { 
-    feature: 'PM2.5', 
-    importance: 0.28, 
+  {
+    feature: 'PM2.5',
+    importance: 0.28,
     description: 'Fine particulate matter is the strongest predictor of AQI due to its direct health impact.',
     recommendation: 'Primary focus for air quality monitoring and control measures.'
   },
-  { 
-    feature: 'PM10', 
-    importance: 0.18, 
+  {
+    feature: 'PM10',
+    importance: 0.18,
     description: 'Coarse particles contribute significantly, especially in dusty and industrial areas.',
     recommendation: 'Important for construction site and road dust management.'
   },
-  { 
-    feature: 'O₃', 
-    importance: 0.15, 
+  {
+    feature: 'O₃',
+    importance: 0.15,
     description: 'Ground-level ozone shows strong seasonal patterns and photochemical activity.',
     recommendation: 'Critical during summer months with high UV radiation.'
   },
-  { 
-    feature: 'NO₂', 
-    importance: 0.12, 
+  {
+    feature: 'NO₂',
+    importance: 0.12,
     description: 'Traffic-related emissions make NO₂ a key indicator in urban environments.',
     recommendation: 'Focus on vehicle emission controls and traffic management.'
   },
-  { 
-    feature: 'Temperature', 
-    importance: 0.08, 
+  {
+    feature: 'Temperature',
+    importance: 0.08,
     description: 'Temperature affects chemical reactions and pollutant dispersion patterns.',
     recommendation: 'Consider seasonal adjustments in forecasting models.'
   },
-  { 
-    feature: 'Humidity', 
-    importance: 0.06, 
+  {
+    feature: 'Humidity',
+    importance: 0.06,
     description: 'Moisture levels influence particulate matter behavior and ozone formation.',
     recommendation: 'Important for coastal and tropical region predictions.'
   },
-  { 
-    feature: 'Wind Speed', 
-    importance: 0.05, 
+  {
+    feature: 'Wind Speed',
+    importance: 0.05,
     description: 'Higher wind speeds typically disperse pollutants, lowering AQI.',
     recommendation: 'Key factor for ventilation corridor planning.'
   },
-  { 
-    feature: 'CO', 
-    importance: 0.04, 
+  {
+    feature: 'CO',
+    importance: 0.04,
     description: 'Carbon monoxide from combustion sources affects local air quality.',
     recommendation: 'Monitor near traffic hotspots and industrial areas.'
   },
-  { 
-    feature: 'SO₂', 
-    importance: 0.03, 
+  {
+    feature: 'SO₂',
+    importance: 0.03,
     description: 'Industrial emissions of sulfur dioxide impact regional air quality.',
     recommendation: 'Focus on power plant and factory emission controls.'
   },
-  { 
-    feature: 'Rainfall', 
-    importance: 0.01, 
+  {
+    feature: 'Rainfall',
+    importance: 0.01,
     description: 'Precipitation temporarily improves air quality by washing out particulates.',
     recommendation: 'Use weather forecasts for short-term AQI predictions.'
   },
@@ -107,7 +107,7 @@ const FeatureImportance = () => {
             Feature Importance Analysis
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Understanding which features contribute most to AQI predictions enables 
+            Understanding which features contribute most to AQI predictions enables
             targeted pollution control strategies and policy decisions.
           </p>
         </motion.div>
@@ -135,7 +135,7 @@ const FeatureImportance = () => {
                   data={featureImportanceData}
                   layout="vertical"
                   margin={{ left: 0, right: 20 }}
-                  onClick={(data) => {
+                  onClick={(data: any) => {
                     if (data && data.activePayload) {
                       setSelectedFeature(data.activePayload[0].payload);
                     }
@@ -217,13 +217,13 @@ const FeatureImportance = () => {
                       {(selectedFeature.importance * 100).toFixed(1)}%
                     </span>
                   </div>
-                  
+
                   <div className="space-y-4">
                     <div>
                       <h4 className="text-sm font-semibold text-muted-foreground mb-2">Description</h4>
                       <p className="text-foreground leading-relaxed">{selectedFeature.description}</p>
                     </div>
-                    
+
                     <div className="pt-4 border-t border-border">
                       <h4 className="text-sm font-semibold text-muted-foreground mb-2">Recommendation</h4>
                       <p className="text-accent">{selectedFeature.recommendation}</p>
@@ -251,7 +251,7 @@ const FeatureImportance = () => {
                 <div className="text-sm font-medium text-foreground">Particulate Matter</div>
                 <div className="text-xs text-muted-foreground mt-1">PM2.5 + PM10 combined</div>
               </motion.div>
-              
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}

@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { Wind, LayoutDashboard } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';

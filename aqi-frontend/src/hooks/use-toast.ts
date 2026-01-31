@@ -7,7 +7,7 @@ export type ToastProps = {
 };
 
 export const useToast = () => {
-    const [toasts, setToasts] = useState<ToastProps[]>([]);
+    const [toasts] = useState<ToastProps[]>([]);
 
     const toast = useCallback(({ title, description, variant }: ToastProps) => {
         console.log(`Toast: ${title} - ${description} (${variant || "default"})`);
