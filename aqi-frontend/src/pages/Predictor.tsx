@@ -62,7 +62,7 @@ const Predictor = () => {
                         </div>
 
                         <iframe
-                            src="http://127.0.0.1:8501/?embedded=true"
+                            src="https://aircast1.streamlit.app/?embedded=true"
                             title="AQI Predictor Dashboard"
                             className="absolute inset-0 w-full h-full border-none pt-16"
                             allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
