@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AQI Project - Glacier Theme Design System */
+:root {
+  --background: 210 30% 98%;
+  --foreground: 210 50% 15%;
+  --card: 0 0% 100%;
+  --card-foreground: 210 50% 15%;
+  --primary: 210 80% 35%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 200 60% 94%;
+  --secondary-foreground: 210 80% 30%;
+  --muted: 210 20% 96%;
+  --muted-foreground: 210 25% 45%;
+  --accent: 195 85% 45%;
+  --accent-foreground: 0 0% 100%;
+  --border: 210 30% 88%;
+  --ring: 195 85% 45%;
+  --radius: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  letter-spacing: -0.01em;
+}
+
+/* Gradient backgrounds */
+.bg-gradient-hero {
+  background: linear-gradient(135deg, hsl(210 80% 25%) 0%, hsl(200 70% 35%) 40%, hsl(195 75% 45%) 100%);
+}
+
+.bg-gradient-frost {
+  background: linear-gradient(135deg, hsl(200 60% 94%) 0%, hsl(210 40% 97%) 100%);
+}
+
+/* Section container */
+.section-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-container {
+    padding: 0 2rem;
+  }
+}
+
+/* Glacier card hover effect */
+.glacier-card {
+  transition: all 0.5s ease-out;
+  box-shadow: 0 2px 15px -3px rgba(30, 64, 175, 0.08);
+}
+
+.glacier-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px -10px rgba(30, 64, 175, 0.15);
+}
+
+/* AQI badge colors */
+.aqi-good { background-color: hsl(145, 65%, 42%); color: white; }
+.aqi-moderate { background-color: hsl(48, 95%, 50%); color: #1e293b; }
+.aqi-unhealthy-sensitive { background-color: hsl(32, 90%, 55%); color: white; }
+.aqi-unhealthy { background-color: hsl(12, 85%, 55%); color: white; }
+.aqi-very-unhealthy { background-color: hsl(355, 75%, 48%); color: white; }
+.aqi-hazardous { background-color: hsl(300, 50%, 35%); color: white; }
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(210 30% 96%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(210 40% 75%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(210 50% 65%);
+}

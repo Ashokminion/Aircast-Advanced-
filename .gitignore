@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+.ipynb_checkpoints/
+
+# Node (React)
+aqi-frontend/node_modules/
+aqi-frontend/dist/
+aqi-frontend/.vite/
+
+# OS
+.DS_Store
+Thumbs.db
