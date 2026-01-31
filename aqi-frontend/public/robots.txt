@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aircast-advanced-asg1vmu2t-ashokcvr2005-2128s-projects.vercel.app/sitemap.xml
+Sitemap: https://aircast-advanced.vercel.app/sitemap.xml
