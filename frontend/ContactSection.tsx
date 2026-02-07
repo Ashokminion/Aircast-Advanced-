@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { Send, Mail, User, MessageSquare, CheckCircle } from 'lucide-react';
+import { Send, Mail, User, MessageSquare, CheckCircle, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -11,7 +11,7 @@ const ContactSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
   const { toast } = useToast();
-  
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,18 +23,18 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1500));
-    
+
     setIsSubmitting(false);
     setIsSubmitted(true);
-    
+
     toast({
       title: "Message sent successfully!",
       description: "Thank you for your interest. We'll respond shortly.",
     });
-    
+
     setTimeout(() => {
       setFormData({ name: '', email: '', message: '' });
       setIsSubmitted(false);
@@ -65,14 +65,15 @@ const ContactSection = () => {
               Contact Us
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Have questions about our CNN-LSTM AQI forecasting model? Interested in 
+              Have questions about our CNN-LSTM AQI forecasting model? Interested in
               collaboration or implementation details? We'd love to hear from you.
             </p>
-            
+
             <div className="space-y-4">
               {[
-                { icon: Mail, label: 'Email', value: 'research@university.edu' },
-                { icon: User, label: 'Research Team', value: 'B.Tech AI Project Team' },
+                { icon: Mail, label: 'Email', value: 'keerthi62562@gmail.com' },
+                { icon: Phone, label: 'Mobile', value: '7904249914' },
+                { icon: User, label: 'Research Team', value: 'Binary X' },
               ].map((item, index) => (
                 <motion.div
                   key={item.label}
@@ -116,7 +117,7 @@ const ContactSection = () => {
               ) : (
                 <>
                   <h3 className="font-serif text-xl font-bold text-foreground mb-6">Send a Message</h3>
-                  
+
                   <div className="space-y-5">
                     <div>
                       <label htmlFor="name" className="text-sm font-medium text-foreground mb-2 block">
@@ -135,7 +136,7 @@ const ContactSection = () => {
                         />
                       </div>
                     </div>
-                    
+
                     <div>
                       <label htmlFor="email" className="text-sm font-medium text-foreground mb-2 block">
                         Email Address
@@ -154,7 +155,7 @@ const ContactSection = () => {
                         />
                       </div>
                     </div>
-                    
+
                     <div>
                       <label htmlFor="message" className="text-sm font-medium text-foreground mb-2 block">
                         Message
@@ -173,7 +174,7 @@ const ContactSection = () => {
                         />
                       </div>
                     </div>
-                    
+
                     <motion.div
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}

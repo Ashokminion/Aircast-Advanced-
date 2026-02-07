@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { Send, Mail, User, MessageSquare, CheckCircle } from 'lucide-react';
+import { Send, Mail, User, MessageSquare, CheckCircle, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -72,7 +72,8 @@ const ContactSection = () => {
             <div className="space-y-4">
               {[
                 { icon: Mail, label: 'Email', value: 'keerthi62562@gmail.com' },
-                { icon: User, label: 'Research Team', value: 'B.Tech AI Project Team' },
+                { icon: Phone, label: 'Mobile', value: '7904249914' },
+                { icon: User, label: 'Research Team', value: 'Binary X' },
               ].map((item, index) => (
                 <motion.div
                   key={item.label}
