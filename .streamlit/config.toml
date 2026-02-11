@@ -1,0 +1,29 @@
+# Streamlit Cloud Deployment Configuration
+
+[server]
+# Run in headless mode (no browser window)
+headless = true
+
+# Default port for Streamlit
+port = 8501
+
+# Enable CORS to allow iframe embedding from Vercel
+enableCORS = true
+
+# Disable XSRF protection for public API access
+enableXsrfProtection = false
+
+# Allow connections from any origin
+[browser]
+# Don't gather usage statistics
+gatherUsageStats = false
+
+# Server address configuration
+serverAddress = "0.0.0.0"
+
+[theme]
+# Optional: Define your Glacier theme colors
+primaryColor = "#22d3ee"
+backgroundColor = "#050505"
+secondaryBackgroundColor = "#080c14"
+textColor = "#ffffff"
