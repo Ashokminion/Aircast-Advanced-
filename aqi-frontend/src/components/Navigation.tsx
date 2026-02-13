@@ -42,7 +42,7 @@ const Navigation = () => {
                             whileHover={{ scale: 1.05 }}
                             className="font-serif text-2xl font-black tracking-tighter text-slate-900"
                         >
-                            SKY<span className="text-sky-500">PLUS</span>
+                            AIR<span className="text-sky-500">CAST</span>
                         </motion.div>
                     </Link>
 

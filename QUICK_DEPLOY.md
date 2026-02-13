@@ -1,4 +1,4 @@
-# 🚀 Quick Deployment Guide - SkyPlus
+# 🚀 Quick Deployment Guide - AirCast
 
 ## ✅ What's Been Done
 
@@ -20,7 +20,7 @@ All code changes are complete:
 3. **Click "New app"**
 
 4. **Configure deployment**:
-   - Repository: `Ashokminion/SkyPlus-` (or your repo)
+   - Repository: `Ashokminion/AirCast-` (or your repo)
    - Branch: `main`
    - Main file path: `app.py`
    
@@ -28,7 +28,7 @@ All code changes are complete:
 
 6. **Wait ~2 minutes** for deployment to complete
 
-7. **Copy your URL**: Will look like `https://ashokminion-skyplus.streamlit.app`
+7. **Copy your URL**: Will look like `https://ashokminion-aircast.streamlit.app`
 
 ---
 
@@ -36,7 +36,7 @@ All code changes are complete:
 
 1. **Go to Vercel dashboard**: https://vercel.com/dashboard
 
-2. **Select your project**: `skyplus`
+2. **Select your project**: `aircast`
 
 3. **Go to Settings** → **Environment Variables**
 
@@ -56,7 +56,7 @@ All code changes are complete:
 
 ### Step 3: Verify It Works
 
-1. Visit: https://skyplus.vercel.app/predictor
+1. Visit: https://aircast.vercel.app/predictor
 
 2. ✅ Check: Streamlit dashboard loads (no "localhost refused" error)
 
