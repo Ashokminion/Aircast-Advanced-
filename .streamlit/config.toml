@@ -1,5 +1,9 @@
 # Streamlit Cloud Deployment Configuration
 
+[client]
+toolbarMode = "minimal"
+showErrorDetails = false
+
 [server]
 # Run in headless mode (no browser window)
 headless = true

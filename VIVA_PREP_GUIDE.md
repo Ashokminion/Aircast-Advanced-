@@ -1,8 +1,8 @@
-# AirCast Project: Viva-Voce Prep (Q&A)
+# SkyPlus Project: Viva-Voce Prep (Q&A)
 
 ### 1. General Questions
 **Q: What is the main objective of this project?**
-A: To build a robust forecasting system named **AirCast** that predicts the Air Quality Index (AQI) using a hybrid deep learning model (CNN-LSTM) based on real-world pollution data from Indian cities.
+A: To build a robust forecasting system named **SkyPlus** that predicts the Air Quality Index (AQI) using a hybrid deep learning model (CNN-LSTM) based on real-world pollution data from Indian cities.
 
 **Q: Why is forecasting AQI important?**
 A: Accurate forecasting allows authorities and citizens to take proactive measures (e.g., traffic restrictions, wearing masks) before pollution levels reach hazardous levels.
@@ -29,13 +29,13 @@ A: Our interpretability analysis (Permutation Importance) showed that **PM2.5** 
 
 ### 4. Implementation & UI/UX Details
 **Q: Which framework did you use for the project?**
-A: We utilized a **Unified Single Page Application (SPA)** architecture for **AirCast**. 
+A: We utilized a **Unified Single Page Application (SPA)** architecture for **SkyPlus**. 
 - **Frontend**: React + Vite + TailwindCSS for a high-performance, responsive "Ethereal Glassmorphism" interface.
 - **Backend**: Python (Streamlit) for generic the neural engine, embedded seamlessly via iframe.
 - **Why this stack?**: It allows us to combine the research capability of Python ML libraries with the modern, cinematic experience of a React web app.
 
-**Q: What is the "AirCast" branding?**
-A: **AirCast** stands for "Air Forecasting". The "Ethereal" theme (violet/fuchsia/glass) was chosen to make environmental data feel futuristic and engaging rather than just static charts.
+**Q: What is the "SkyPlus" branding?**
+A: **SkyPlus** stands for "Sky Plus Intelligence". The "Ethereal" theme (violet/fuchsia/glass) was chosen to make environmental data feel futuristic and engaging rather than just static charts.
 
 **Q: How does the "Live Predictor" work?**
 A: The "Live Predictor" is a dedicated module where the React frontend communicates with the local Python server running at port 8501. It uses an embedded view to show real-time inference without requiring the user to switch tabs or applications.

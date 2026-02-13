@@ -1,4 +1,4 @@
-# Project Prompt: Theni AirCast (Advanced AQI Forecasting)
+# Project Prompt: SkyPlus (Advanced AQI Forecasting)
 
 ## 1. Project Objective
 Develop a production-ready, hyper-local Air Quality Index (AQI) and Pollution Forecasting System specifically tailored for the Theni region. The system must use a **Hybrid Deep Learning Model (CNN + LSTM)** to predict AQI levels 24 hours in advance, ensuring high accuracy by capturing both spatial features (via CNN) and temporal dependencies (via LSTM).
@@ -30,7 +30,7 @@ Develop a production-ready, hyper-local Air Quality Index (AQI) and Pollution Fo
 - **Framework**: React 18, Vite, TypeScript.
 - **Styling**: Tailwind CSS with custom "Glacier" config.
 - **Components**:
-    - **Hero Section**: "Hyper-Local Theni AirCast" with animated gradients.
+    - **Hero Section**: "Hyper-Local SkyPlus" with animated gradients.
     - **Live Dashboard**: Displaying Real-time AQI, PM2.5, and Temperature.
     - **Forecasting Graph**: Interactive line charts (Recharts/Chart.js) showing 7-day trends.
     - **Map Interface**: Visual representation of Theni district pollution hotspots.
