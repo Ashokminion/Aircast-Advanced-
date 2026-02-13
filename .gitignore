@@ -14,3 +14,10 @@ aqi-frontend/.vite/
 # OS
 .DS_Store
 Thumbs.db
+
+# Data & Large Files
+*.zip
+*.csv
+*.h5
+frontend/node_modules/
+frontend/dist/

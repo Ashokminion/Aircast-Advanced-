@@ -9,7 +9,7 @@ const Footer = () => {
                         <div className="p-2 rounded-xl bg-primary text-white">
                             <Wind className="w-5 h-5" />
                         </div>
-                        <span className="font-serif font-bold text-xl text-primary">SkyPlus</span>
+                        <span className="font-serif font-bold text-xl text-primary">AirCast</span>
                     </div>
                     <div className="text-sm text-muted-foreground">
                         © 2026 B.Tech AI & DS Final Year Project | Contact: 7397066177 | pixelsquad4@gamil.com

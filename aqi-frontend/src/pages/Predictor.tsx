@@ -26,10 +26,10 @@ const Predictor = () => {
                             System Online
                         </span>
                         <h1 className="font-serif text-5xl md:text-7xl font-black text-slate-900 mb-6">
-                            SKYPLUS <span className="text-gradient-animate">INTELLIGENCE</span>
+                            AIRCAST <span className="text-gradient-animate">INTELLIGENCE</span>
                         </h1>
                         <p className="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
-                            Interfacing with the SkyPlus-7B Neural Engine for hyper-local telemetry and pollution forecasting.
+                            Interfacing with the AirCast-7B Neural Engine for hyper-local telemetry and pollution forecasting.
                         </p>
                     </motion.div>
 
@@ -73,7 +73,7 @@ const Predictor = () => {
                                 <iframe
                                     src={import.meta.env.VITE_STREAMLIT_URL || "http://localhost:8501"}
                                     className="w-full h-full border-0 relative z-10"
-                                    title="SkyPlus Dashboard"
+                                    title="AirCast Dashboard"
                                 />
                             </motion.div>
                         </div>
