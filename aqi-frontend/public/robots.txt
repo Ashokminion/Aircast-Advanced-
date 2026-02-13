@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aircast-advanced.vercel.app/sitemap.xml
+Sitemap: https://skyplus-advanced.vercel.app/sitemap.xml

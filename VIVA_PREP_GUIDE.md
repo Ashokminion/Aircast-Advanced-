@@ -35,7 +35,7 @@ A: We utilized a **Unified Single Page Application (SPA)** architecture for **Ai
 - **Why this stack?**: It allows us to combine the research capability of Python ML libraries with the modern, cinematic experience of a React web app.
 
 **Q: What is the "AirCast" branding?**
-A: **AirCast** stands for "Air Forecasting". The "Ethereal" theme (violet/fuchsia/glass) was chosen to make environmental data feel futuristic and engaging rather than just static charts.
+A: **AirCast** stands for "Air Intelligence". The "Ethereal" theme (violet/fuchsia/glass) was chosen to make environmental data feel futuristic and engaging rather than just static charts.
 
 **Q: How does the "Live Predictor" work?**
 A: The "Live Predictor" is a dedicated module where the React frontend communicates with the local Python server running at port 8501. It uses an embedded view to show real-time inference without requiring the user to switch tabs or applications.

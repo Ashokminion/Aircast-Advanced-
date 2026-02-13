@@ -58,7 +58,7 @@ const HeroSection = () => {
           className="font-serif text-6xl md:text-9xl font-black text-slate-900 mb-8 tracking-tighter leading-[0.9]"
         >
           <motion.span variants={textVariants} className="block text-slate-800 drop-shadow-sm">AI-POWERED</motion.span>
-          <motion.span variants={textVariants} className="block text-gradient-animate">AIRCAST FORECASTING</motion.span>
+          <motion.span variants={textVariants} className="block text-gradient-animate">SKYPLUS</motion.span>
         </motion.h1>
 
         <motion.p

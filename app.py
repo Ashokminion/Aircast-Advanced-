@@ -9,7 +9,7 @@ from preprocess import load_and_preprocess
 
 # Page Config
 # Page Config
-st.set_page_config(page_title="SkyPlus", layout="wide", page_icon="❄️")
+st.set_page_config(page_title="AirCast", layout="wide", page_icon="❄️")
 
 # Styling for Glacier Premium Theme
 st.markdown("""
@@ -118,7 +118,7 @@ def load_data_sample():
     return df, valid_cities
 
 def main():
-    st.markdown("<h1 style='text-align: center; font-size: 3.5rem;'>❄️ <span class='glacier-text'>SkyPlus</span></h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; font-size: 3.5rem;'>❄️ <span class='glacier-text'>AirCast</span></h1>", unsafe_allow_html=True)
     st.markdown("<h3 style='text-align: center; color: rgba(255,255,255,0.7) !important;'>Hyper-Local Pollution Intelligence System</h3>", unsafe_allow_html=True)
     
     # Load assets

@@ -28,7 +28,7 @@ To make your project searchable on Google as "AirCast", you need to host it onli
     - Search unga GitHub repo name.
     - Main file-la `app.py` nu select pannunga.
     - Click **"Deploy!"**. 
-4.  **Ready!**: Avvalavu dhaan! Streamlit oru URL tharum (e.g., `aircast-app.streamlit.app`). Adha mattum copy panni vechikonga. ✨
+4.  **Ready!**: Avvalavu dhaan! Streamlit oru URL tharum (e.g., `skyplus-app.streamlit.app`). Adha mattum copy panni vechikonga. ✨
 
 ## Part 2: Connect Frontend to Backend
 1.  Open `aqi-frontend/src/pages/Predictor.tsx` in your code.
@@ -47,11 +47,11 @@ To make your project searchable on Google as "AirCast", you need to host it onli
     *   **Root Directory**: Click "Edit" and select `aqi-frontend`.
     *   **Framework Preset**: Vite.
 5.  **Deploy**: Click Deploy.
-6.  **Done!**: You will get a URL like `https://aircast-project.vercel.app`.
+6.  **Done!**: You will get a URL like `https://skyplus-project.vercel.app`.
 
 ## 🌍 Getting on Google (SEO)
 1.  **Search Console**: Go to [Google Search Console](https://search.google.com/search-console).
-2.  **Add Property**: Enter your Vercel URL (e.g., `https://aircast-project.vercel.app`).
+2.  **Add Property**: Enter your Vercel URL (e.g., `https://skyplus-project.vercel.app`).
 3.  **Request Indexing**: Once verified, use the "URL Inspection" tool to inspect your URL and click "Request Indexing".
 4.  **Wait**: It usually takes 2-5 days for Google to start showing your site when searching for "AirCast".
 
